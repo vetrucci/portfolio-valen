@@ -57,7 +57,8 @@ nav > .wrapper {
 }
 
 .logo > img {
-    height: 45px;
+    height: 50px;
+    border-radius: 200px;
 }
 
 /*
@@ -179,6 +180,7 @@ a {
 
 #profile > .wrapper > div > .foto > img {
     max-width: 100%;
+    border-radius: 10px;
 
 }
 

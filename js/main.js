@@ -18,3 +18,18 @@ function displayMenu(){
         iconClose.style.display = 'inline';
     }
 }
+
+function toggleCV() {
+    var container = document.getElementById("containerCV");
+    var btn = document.getElementById("btnCV");
+
+    if (container.style.display === "none" || container.style.display === "") {
+        container.style.display = "block";
+        btn.innerText = " Tutup Dokumen CV";
+        btn.style.backgroundColor = "#dc3545"; // Berubah warna jadi merah
+    } else {
+        container.style.display = "none";
+        btn.innerText = " VIEW RESUME";
+        btn.style.backgroundColor = "#007bff"; // kembali jadi biru
+    }
+}
