@@ -1,0 +1,962 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+html, 
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/*
+* menu
+*/
+nav {
+    background-color: #222831;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    height: 45px;
+}
+
+/*
+* hero/jumbotron
+*/
+header {
+    background: url('../image/background\ manufaktur.jpg');
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: "Changa One", sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 0 0 4px #000;
+}
+
+.header-opacity {
+    background-color: #222831;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron > h4 {
+    color: #fff;
+    font-size: 2.8rem;
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-jumbotron > h5 {
+    color: #fff;
+    padding: 5px;
+    margin: 0px;
+    font-size: 2.8rem;
+}
+
+.header-jumbotron > h6 {
+    color: #fff;
+    padding: 5px;
+    margin: 0px 5px 20px 5px;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    text-shadow: none;
+}
+
+.button {
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.button-xl {
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+/*
+* profile
+*/
+#profile {
+    background-color: #393E46;
+    color: #fff;
+}
+
+#profile > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#profile > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Changa One", sans-serif;
+    letter-spacing: 1px;
+}
+
+#profile > .wrapper > p {
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 10px;
+    padding: 0px;
+}
+
+#profile > .wrapper > div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile > .wrapper > div > .foto {
+    width: 30%;
+}
+
+#profile > .wrapper > div > .foto > img {
+    max-width: 100%;
+
+}
+
+#profile > .wrapper > div > .desc {
+    width: 70%;
+    padding: 20px;
+    margin: 0px 0px 0px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+#profile > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 1rem;
+    color: #000;
+}
+
+#profile > .wrapper > div > .desc > .social {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+#profile > .wrapper > div > .desc > .social > a {
+color: #00ADB5;
+}
+
+/*
+* experience
+*/
+#experience {
+    background-color: #222831;
+    color: #fff;
+}
+
+#experience > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#experience > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Changa One", sans-serif;
+    letter-spacing: 1px;
+}
+
+#experience > .wrapper > div {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: auto;
+    align-items: center;
+}
+
+#experience > .wrapper > div > .desc {
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#experience > .wrapper > div > .desc > p {
+    font-size: 2.8rem;
+    font-family: "Changa One", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#experience > .wrapper > div > .desc > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experience > .wrapper > div > .desc > div > h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#experience > .wrapper > div > .desc > h5 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.2rem;
+}
+
+#experience > .wrapper > div .foto {
+    width: 50%;
+}
+
+#experience > .wrapper > div > .foto > img {
+    max-width: 100%;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+#experience > .wrapper > div > .desc {
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#experience > .wrapper > div > .desc> p {
+    font-size: 2.8rem;
+    font-family: "Changa One", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#experience > .wrapper > div > .desc > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experience > .wrapper > div > .desc > div > h4 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#experience > .wrapper > div > .desc > h5 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.2rem;
+}
+
+#experience > .wrapper > div .foto {
+    width: 50%;
+}
+
+#experience > .wrapper > div > .foto > img {
+    max-width: 100%;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+/*
+* education
+*/
+#education {
+    background-color: #393E46;
+    color: #fff
+}
+
+#education > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#education > .wrapper > div {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: auto;
+    align-items: center;
+}
+
+#education > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px 0px 30px 0px;
+    padding: 0px;
+    font-family: "Changa One", sans-serif;
+    letter-spacing: 1px;
+}
+
+#education > .wrapper > div > .polmind {
+    width: 50%;
+    padding: 0px;
+    margin: auto;
+    max-width: 100%;
+}
+
+#education > .wrapper > div > .polmind > p {
+    font-size: 2.8rem;
+    font-family: "Changa One", sans-serif;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#education > .wrapper > div > .polmind > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#education > .wrapper > div > .polmind > div > h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0px 10px 5px 0px;
+}
+
+#education > .wrapper > div .polmind > .foto {
+    width: 90%;
+    align-items: center;
+    margin: 0px 0px 0px 20px;
+}
+
+#education > .wrapper > div .polmind > .foto > img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#education > .wrapper > div > .stempert {
+    width: 50%;
+    padding: 0px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#education > .wrapper > div > .stempert {
+    width: 50%;
+    padding: 0px;
+    margin: auto;
+    max-width: 100%;
+}
+
+#education > .wrapper > div > .stempert > p {
+    font-size: 2.8rem;
+    font-family: "Changa One", sans-serif;
+    margin: 0px 0px 10px 20px;
+    padding: 0px;
+    text-align: center;
+}
+
+#education > .wrapper > div > .stempert > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#education > .wrapper > div > .stempert > div > h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0px 10px 5px 40px;
+}
+
+#education > .wrapper > div .stempert > .foto {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+}
+
+#education > .wrapper > div .stempert > .foto > img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 0px 0px 0px 15px
+}
+
+/*
+* contact
+*/
+#contact {
+    background-color: #EEEEEE;
+    color: #000;
+}
+
+#contact > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#contact > .wrapper > p {
+    font-size: 2.8rem;
+    font-family: "Changa One", sans-serif;
+}
+
+#contact > .wrapper > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact > .wrapper > div > .email {
+    pad: 50px 0px 50px 0px;
+}
+
+#contact > .wrapper > div > .email > p {
+    font-size: 1.4rem;
+    font-family: "Changa One", sans-serif;
+    padding: 0px;
+    margin: 10px 0px 5px 0px;
+}
+
+#contact > .wrapper > div > .email > a {
+    font-family: "Nunito Sans", sans-serif;
+    padding: auto;
+    font-size: 1.1rem;
+}
+
+#contact > .wrapper > div > .whatsapp {
+    pad: 50px 0px 50px 0px;
+}
+
+#contact > .wrapper > div > .whatsapp > p {
+    font-size: 1.4rem;
+    font-family: "Changa One", sans-serif;
+    padding: 0px;
+    margin: 10px 0px 5px 0px;
+}
+
+#contact > .wrapper > div > .whatsapp > a {
+    font-family: "Nunito Sans", sans-serif;
+    padding: auto;
+    font-size: 1.1rem;
+}
+
+#contact > .wrapper > div > .linkedin {
+    pad: 50px 0px 50px 0px;
+}
+
+#contact > .wrapper > div > .linkedin > p {
+    font-size: 1.4rem;
+    font-family: "Changa One", sans-serif;
+    padding: 0px;
+    margin: 10px 0px 5px 0px;
+}
+
+#contact > .wrapper > div > .linkedin > a {
+    font-family: "Nunito Sans", sans-serif;
+    padding: auto;
+    font-size: 1.1rem;
+}
+
+/*
+* footer
+*/
+footer {
+    background-color: #222831;
+    color: #fff;
+    text-align: center;
+}
+footer > ,.wrapper {
+    padding: 20px 0px 20px 0px;
+}
+
+/*
+* hamburger-menu
+*/
+
+
+button.hamburger-menu {
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: none;
+}
+button.hamburger-menu > i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+button.hamburger-menu > i.icon-close {
+    display: none;
+}
+
+
+/*
+* 1024, 900, 768, 450
+*/
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1016px) {
+    #profile > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 0.75rem;
+    color: #000;
+}
+nav > .wrapper {
+    font-size: 1.1rem;
+}
+.header-jumbotron > h4 {
+    font-size: 2.4rem;
+}
+.header-jumbotron > h5 {
+    font-size: 2.4rem;
+}
+.header-jumbotron > h6 {
+    font-size: 0.75rem;
+}
+.header-jumbotron > .button-xl {
+    font-size: 1.2rem;
+}
+#profile > .wrapper > h4 {
+    font-size: 2.22rem;
+}
+#profile > .wrapper > p {
+    font-size: 0.75rem;
+}
+#profile > .wrapper > div > .desc {
+    padding: 15px;
+}
+#profile > .wrapper > div > .desc > p {
+    font-size: 0.62rem;
+    margin: 4px;
+}
+#profile > .wrapper > div > .desc > .social {
+    font-size: 1rem;
+    padding: 2px;
+}
+#experience > .wrapper > h4 {
+    font-size: 2.22rem;
+}
+#experience > .wrapper > div > .desc > p {
+    font-size: 2rem;
+}
+#experience > .wrapper > div > .desc > div > h4 {
+    font-size: 0.75rem;
+}
+#experience > .wrapper > div > .desc > h5 {
+    font-size: 0.75rem;
+}
+#education > .wrapper > h4 {
+    font-size: 2.22rem;
+}
+#education > .wrapper > div > .polmind > p {
+    font-size: 1.95rem;
+}
+#education > .wrapper > div > .polmind > div > h4 {
+    font-size: 0.75rem;
+}
+#education > .wrapper > div > .polmind > .foto {
+    margin-left: 15px;
+}
+#education > .wrapper > div > .stempert > p {
+    font-size: 1.95rem;
+    margin-left: 28px;
+}
+#education > .wrapper > div > .stempert > div > h4 {
+    font-size: 0.75rem;
+}
+#contact > .wrapper > p {
+    font-size: 2.22rem;
+}
+#contact > .wrapper > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#contact > .wrapper > div > .email > p {
+    font-size: 1.2rem;
+}
+#contact > .wrapper > div > .email > a {
+    font-size: 1rem;
+}
+#contact > .wrapper > div > .whatsapp > p {
+    font-size: 1.2rem;
+}
+#contact > .wrapper > div > .whatsapp > a {
+    font-size: 1rem;
+}
+#contact > .wrapper > div > .linkedin > p {
+    font-size: 1.2rem;
+}
+#contact > .wrapper > div > .linkedin > a {
+    font-size: 1rem;
+}
+footer {
+    font-size: 0.8rem;
+}
+}
+@media only screen and (max-width: 900px) {
+    #profile > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 0.75rem;
+    color: #000;
+}
+nav > .wrapper {
+    font-size: 1.1rem;
+}
+.header-jumbotron > h4 {
+    font-size: 2.4rem;
+}
+.header-jumbotron > h5 {
+    font-size: 2.4rem;
+}
+.header-jumbotron > h6 {
+    font-size: 0.75rem;
+}
+.header-jumbotron > .button-xl {
+    font-size: 1.2rem;
+}
+#profile > .wrapper > h4 {
+    font-size: 2.22rem;
+}
+#profile > .wrapper > p {
+    font-size: 0.75rem;
+}
+#profile > .wrapper > div > .desc {
+    padding: 15px;
+}
+#profile > .wrapper > div > .desc > p {
+    font-size: 0.62rem;
+    margin: 4px;
+}
+#profile > .wrapper > div > .desc > .social {
+    font-size: 1rem;
+    padding: 2px;
+}
+#experience > .wrapper > h4 {
+    font-size: 2.22rem;
+}
+#experience > .wrapper > div > .desc > p {
+    font-size: 2rem;
+}
+#experience > .wrapper > div > .desc > div > h4 {
+    font-size: 0.75rem;
+}
+#experience > .wrapper > div > .desc > h5 {
+    font-size: 0.75rem;
+}
+#education > .wrapper > h4 {
+    font-size: 2.22rem;
+}
+#education > .wrapper > div > .polmind > p {
+    font-size: 1.95rem;
+}
+#education > .wrapper > div > .polmind > div > h4 {
+    font-size: 0.75rem;
+}
+#education > .wrapper > div > .polmind > .foto {
+    margin-left: 15px;
+}
+#education > .wrapper > div > .stempert > p {
+    font-size: 1.95rem;
+    margin-left: 28px;
+}
+#education > .wrapper > div > .stempert > div > h4 {
+    font-size: 0.75rem;
+}
+#contact > .wrapper > p {
+    font-size: 2.22rem;
+}
+#contact > .wrapper > div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#contact > .wrapper > div > .email > p {
+    font-size: 1.2rem;
+}
+#contact > .wrapper > div > .email > a {
+    font-size: 1rem;
+}
+#contact > .wrapper > div > .whatsapp > p {
+    font-size: 1.2rem;
+}
+#contact > .wrapper > div > .whatsapp > a {
+    font-size: 1rem;
+}
+#contact > .wrapper > div > .linkedin > p {
+    font-size: 1.2rem;
+}
+#contact > .wrapper > div > .linkedin > a {
+    font-size: 1rem;
+}
+footer {
+    font-size: 0.8rem;
+}
+}
+@media only screen and (max-width: 768px) {
+    #profile > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 0.75rem;
+    color: #000;
+}
+nav > .wrapper {
+    font-size: 1rem;
+}
+.header-jumbotron > h4 {
+    font-size: 2rem;
+}
+.header-jumbotron > h5 {
+    font-size: 2rem;
+}
+.header-jumbotron > h6 {
+    font-size: 0.75rem;
+}
+.header-jumbotron > .button-xl {
+    font-size: 1rem;
+}
+#profile > .wrapper > h4 {
+    font-size: 1.8rem;
+}
+#profile > .wrapper > p {
+    font-size: 0.65rem;
+}
+#profile > .wrapper > div > .desc {
+    padding: 12.5px;
+}
+#profile > .wrapper > div > .desc > p {
+    font-size: 0.41rem;
+    margin: 1.65px;
+}
+#profile > .wrapper > div > .desc > .social {
+    font-size: 0.75rem;
+}
+#experience > .wrapper > h4 {
+    font-size: 1.8rem;
+}
+#experience > .wrapper > div > .desc > p {
+    font-size: 1.5rem;
+}
+#experience > .wrapper > div > .desc > div > h4 {
+    font-size: 0.55rem;
+}
+#experience > .wrapper > div > .desc > h5 {
+    font-size: 0.55rem;
+}
+#education > .wrapper > h4 {
+    font-size: 1.8rem;
+}
+#education > .wrapper > div > .polmind > p {
+    font-size: 1.4rem;
+}
+#education > .wrapper > div > .polmind > div > h4 {
+    font-size: 0.55rem;
+}
+#education > .wrapper > div > .polmind > .foto {
+    margin-left: 10px;
+}
+#education > .wrapper > div > .stempert > p {
+    font-size: 1.4rem;
+}
+#education > .wrapper > div > .stempert > div > h4 {
+    font-size: 0.5rem;
+    margin-left: 30px;
+    margin-right: 0px;
+}
+#contact > .wrapper > p {
+    font-size: 1.8rem;
+}
+#contact > .wrapper > div > .email > p {
+    font-size: 1rem;
+}
+#contact > .wrapper > div > .email > a {
+    font-size: 0.75rem;
+}
+#contact > .wrapper > div > .whatsapp > p {
+    font-size: 1rem;
+}
+#contact > .wrapper > div > .whatsapp > a {
+    font-size: 0.75rem;
+}
+#contact > .wrapper > div > .linkedin > p {
+    font-size: 1rem;
+}
+#contact > .wrapper > div > .linkedin > a {
+    font-size: 0.75rem;
+}
+footer {
+    font-size: 0.7rem;
+}
+button.hamburger-menu {
+    display: inline;
+}
+.menu {
+    display: none;
+}
+}
+@media only screen and (max-width: 600px) {
+    #profile > .wrapper > div > .desc > p {
+    margin: 0px 0px 10px 0px;
+    font-size: 0.75rem;
+    color: #000;
+}
+nav > .wrapper {
+    font-size: 0.75rem;
+    position: relative;
+}
+.header-jumbotron > h4 {
+    font-size: 1.8rem;
+}
+.header-jumbotron > h5 {
+    font-size: 1.8rem;
+}
+.header-jumbotron > h6 {
+    font-size: 0.5rem;
+}
+.header-jumbotron > .button-xl {
+    font-size: 0.75rem;
+}
+#profile > .wrapper > h4 {
+    font-size: 1.8rem;
+}
+#profile > .wrapper > p {
+    font-size: 0.5rem;
+}
+#profile > .wrapper > div > .desc {
+    padding: 10px;
+}
+#profile > .wrapper > div > .desc > p {
+    font-size: 0.35rem;
+    margin: 3px;
+}
+#profile > .wrapper > div > .desc > .social {
+    font-size: 0.5rem;
+}
+#experience > .wrapper > h4 {
+    font-size: 1.8rem;
+}
+#experience > .wrapper > div > .desc > p {
+    font-size: 1rem;
+}
+#experience > .wrapper > div > .desc > div > h4 {
+    font-size: 0.45rem;
+}
+#experience > .wrapper > div > .desc > h5 {
+    font-size: 0.45rem;
+}
+#education > .wrapper > h4 {
+    font-size: 1.8rem;
+}
+#education > .wrapper > div > .polmind > p {
+    font-size: 1rem;
+}
+#education > .wrapper > div > .polmind > div > h4 {
+    font-size: 0.34rem;
+    margin-left: 7px;
+}
+#education > .wrapper > div > .polmind > .foto {
+    margin: auto;
+}
+#education > .wrapper > div > .stempert > p {
+    font-size: 1rem;
+    margin-left: 27px;
+}
+#education > .wrapper > div > .stempert > div > h4 {
+    font-size: 0.34rem;
+    margin-left: 28px;
+    margin-right: 0px;
+}
+#contact > .wrapper > p {
+    font-size: 1.8rem;
+}
+#contact > .wrapper > div {
+    display: block;
+}
+#contact > .wrapper > div > .email > p {
+    font-size: 0.8rem;
+}
+#contact > .wrapper > div > .email > a {
+    font-size: 0.75rem;
+}
+#contact > .wrapper > div > .whatsapp > p {
+    font-size: 0.8rem;
+}
+#contact > .wrapper > div > .whatsapp > a {
+    font-size: 0.75rem;
+}
+#contact > .wrapper > div > .linkedin > p {
+    font-size: 0.8rem;
+}
+#contact > .wrapper > div > .linkedin > a {
+    font-size: 0.75rem;
+}
+footer {
+    font-size: 0.5rem;
+}
+button.hamburger-menu {
+    display: inline;
+}
+.menu {
+    display: none;
+}
+.tampil {
+    display: inline;
+}
+.tampil > ul {
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    top: 85;
+    left: 0px;
+}
+.tampil > ul > li {
+    padding: 10px 20px 10px 20px;
+}
+}
