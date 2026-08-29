@@ -841,7 +841,25 @@ button.hamburger-menu {
 .menu {
     display: none;
 }
+.menu {
+    display: none;
 }
+.tampil {
+    display: inline;
+}
+.tampil > ul {
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    top: 85;
+    left: 0px;
+}
+.tampil > ul > li {
+    padding: 10px 20px 10px 20px;
+}
+}
+
 @media only screen and (max-width: 600px) {
     #profile > .wrapper > div > .desc > p {
     margin: 0px 0px 10px 0px;
